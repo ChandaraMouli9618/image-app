@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ViewProfileActivity"
+    tools:layout_editor_absoluteX="-83dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameView_profileView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/medium"
+                android:padding="10sp"
+                android:text="Name"
+                android:textColor="@color/pri_col"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/classView_profileView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:padding="10sp"
+                android:text="Class"
+                android:textColor="@color/pri_col"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/nameView_profileActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:padding="10sp"
+                android:text="Name"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="103dp"
+                tools:layout_editor_absoluteY="151dp" />
+
+            <TextView
+                android:id="@+id/classView_profileActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:padding="10sp"
+                android:text="Class"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/medium"
+        android:text="Profile"
+        android:textColor="@color/pri_col"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_profileView"
+        android:layout_width="370dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <VideoView
+        android:id="@+id/vidView_profileView"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_profileView"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/imgView_profileView"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_profileView"
+        app:layout_constraintVertical_bias="0.445"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Photo"
+        android:textSize="20sp"
+        android:textColor="@color/pri_col"
+        android:fontFamily="@font/medium"
+        app:layout_constraintBottom_toTopOf="@+id/imgView_profileView"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_profileView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imgView_profileView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/medium"
+        android:text="Video"
+        android:textColor="@color/pri_col"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/vidView_profileView"
+        app:layout_constraintEnd_toEndOf="@+id/vidView_profileView"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/vidView_profileView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
